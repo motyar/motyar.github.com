@@ -8,7 +8,7 @@ ROOT_DIR=$BIN_DIR
 PERL=`which perl`
 echo "$POST_DIR"
 
-for f in *.txt
+for f in $(find $1 -name "*.txt")
 do
 echo "- ["$(head -n 1 $f | sed 's/# //g')"]("$f")" >> list.txt
 done
