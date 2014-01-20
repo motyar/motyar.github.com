@@ -1,3 +1,2 @@
 # Index
-- [Its all about me](./posts/me.html)
-- [My Blog](./posts/index.html)
+- [About me](./about.html)
