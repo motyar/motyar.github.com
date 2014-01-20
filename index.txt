@@ -1,3 +1,0 @@
-# Index
-- [About me](./about.html)
-- [Git please ignore.html files](./gitignore.html)
