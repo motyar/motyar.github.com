@@ -1,3 +1,2 @@
 # Index
-- [404 Not found](404.html)
-- [Its all about me](me.html)
+- [](*.html)

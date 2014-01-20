@@ -6,7 +6,7 @@ set -eo pipefail
 BIN_DIR=$(cd $(dirname $0); pwd)
 ROOT_DIR=$BIN_DIR
 PERL=`which perl`
-
+echo "$POST_DIR"
 
 for f in *.txt
 do
@@ -17,6 +17,7 @@ sed 's/.txt/.html/g' list.txt >> index.txt
 rm list.txt
 
 MARKDOWN_FILES=`find $1 -name "*.txt"`
+
 
 for f in $MARKDOWN_FILES; do
   NEWFILE=${f%.*}.html
