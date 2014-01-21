@@ -8,10 +8,6 @@ ROOT_DIR=$BIN_DIR
 PERL=`which perl`
 echo "$POST_DIR"
 
-render_template() {
-  eval "echo \"$($1)\""
-}
-
 echo "">list 
 for f in $(find $1 -name "*.txt")
 do
@@ -34,17 +30,15 @@ for f in $MARKDOWN_FILES; do
   TITLE=$(head -n 1 $f | sed 's/# //g')
   
   NEXT=`basename "$f" .txt`.html
-  #BUF=$(cat $LAST)
-  ## echo $BUF | sed 's/P_NEXT/'"$NEXT"'/g' >  $LAST
+  BUF=$(cat $LAST)
+  echo $BUF | sed 's/P_NEXT/'"$NEXT"'/g' >  $LAST
   
   echo "       $f -> $NEWFILE $TITLE $LAST"
   
- ## cat $ROOT_DIR/includes/header.html | sed 's/P_TITLE/'"$TITLE"'/g' > $NEWFILE
+  cat $ROOT_DIR/includes/header.html | sed 's/P_TITLE/'"$TITLE"'/g' > $NEWFILE
   $PERL $ROOT_DIR/Markdown.pl $f >> $NEWFILE
- ## cat $ROOT_DIR/includes/footer.html | sed 's/P_LAST/'"$LAST"'/g' >> $NEWFILE
-	cat $ROOT_DIR/includes/footer.html >> $NEWFILE
-  NBF=$(cat $NEWFILE)  
-  render_template $NBF > $NEWFILE
+  cat $ROOT_DIR/includes/footer.html | sed 's/P_LAST/'"$LAST"'/g' >> $NEWFILE
+
   LAST=`basename "$f" .txt`.html
   #rm $f
 done 
