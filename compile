@@ -8,14 +8,17 @@ ROOT_DIR=$BIN_DIR
 PERL=`which perl`
 echo "$POST_DIR"
 
-echo "">list.txt
+#echo "">list.txt
+
 for f in $(find $1 -name "*.txt")
 do
-echo "- ["$(head -n 1 $f | sed 's/# //g')"]("$f")" >> list.txt
+echo "- ["$(head -n 1 $f | sed 's/# //g')"]("$f")" >> list
 done
+
 echo "# Index"> index.txt 
-sed 's/.txt/.html/g' list.txt >> index.txt
-rm list.txt
+sed 's/.txt/.html/g' list >> index.txt
+
+#rm list.txt
 
 MARKDOWN_FILES=`find $1 -name "*.txt"`
 
