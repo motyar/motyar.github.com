@@ -22,6 +22,7 @@ sed 's/.txt/.html/g' list >> index.txt
 MARKDOWN_FILES=`find $1 -name "*.txt"`
 
 LAST="index.html"
+NEXT=""
 
 for f in $MARKDOWN_FILES; do
   
