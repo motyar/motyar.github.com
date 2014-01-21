@@ -33,7 +33,7 @@ for f in $MARKDOWN_FILES; do
   $PERL $ROOT_DIR/Markdown.pl $f >> $NEWFILE
   cat $ROOT_DIR/includes/footer.html | sed 's/P_LAST/'"$LAST"'/g' >> $NEWFILE
 
-  LAST=`basename "$f" .txt`
+  LAST=`basename "$f" .txt`.html
   #rm $f
 done 
 
