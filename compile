@@ -34,7 +34,7 @@ for f in $MARKDOWN_FILES; do
   cat $ROOT_DIR/includes/footer.html | sed 's/P_LAST/'"$LAST"'/g' >> $NEWFILE
 
   LAST=`basename "$f" .txt`.html
-  echo " $ROOT_DIR/$LAST | sed 's/P_NEXT/'"$LAST"'/g' >  $ROOT_DIR/$LAST"
+  echo "cat $LAST | sed 's/P_NEXT/'"$LAST"'/g' >  $LAST"
   #rm $f
 done 
 
