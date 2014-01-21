@@ -9,7 +9,7 @@ PERL=`which perl`
 echo "$POST_DIR"
 
 render_template() {
-  eval "echo \"$(cat $1)\""
+  eval "echo \"$($1)\""
 }
 
 echo "">list 
@@ -43,8 +43,8 @@ for f in $MARKDOWN_FILES; do
   $PERL $ROOT_DIR/Markdown.pl $f >> $NEWFILE
  ## cat $ROOT_DIR/includes/footer.html | sed 's/P_LAST/'"$LAST"'/g' >> $NEWFILE
 	cat $ROOT_DIR/includes/footer.html >> $NEWFILE
- NBF=$(cat $NEWFILE)  
- render_template $NBF > $NEWFILE
+  NBF=$(cat $NEWFILE)  
+  render_template $NBF > $NEWFILE
   LAST=`basename "$f" .txt`.html
   #rm $f
 done 
