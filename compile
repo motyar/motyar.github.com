@@ -43,6 +43,6 @@ for f in $MARKDOWN_FILES; do
   #rm $f
 done 
 
-
-git commit -a -m "Update"
-git push
+git add -A . 
+git commit -m "Updated" 
+git push --all --force
