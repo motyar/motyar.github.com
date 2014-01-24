@@ -20,7 +20,7 @@ sed 's/.txt/.html/g' list >> index.txt
 #rm list.txt
 
 MARKDOWN_FILES=`find $1 -name "*.txt"`
-
+touch index.html
 LAST="index.html"
 NEXT=" "
 
