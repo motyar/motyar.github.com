@@ -1,4 +1,4 @@
-# Index
+# Posts
 
 - [First post](./first.html)
 - [New](./new.html)
