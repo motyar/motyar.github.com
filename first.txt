@@ -1,3 +1,0 @@
-# First post
-Testing something.
-Its an **Example** of *MarkDown*
