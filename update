@@ -14,7 +14,7 @@ do
 echo "- ["$(head -n 1 $f | sed 's/# //g')"]("$f")" >> list
 done
 
-echo "# Posts"> index.txt 
+echo "# Motyar's blog"> index.txt 
 sed 's/.txt/.html/g' list >> index.txt
 
 #rm list.txt

@@ -1,4 +1,4 @@
-# Posts
+# Motyar's blog
 
 - [First post](./first.html)
 - [New](./new.html)
