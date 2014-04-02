@@ -1,5 +1,6 @@
 # Index
 
 - [First post](./first.html)
+- [New](./new.html)
 - [TitleHere is the](./third.html)
 - [Second Post is here](./second.html)
