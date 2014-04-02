@@ -1,6 +1,3 @@
 # Motyar's blog
 
-- [](./another.html)
 - [ONe more example](./onemore.html)
-- [I am one more title post](./an.html)
-- [ON](./on.html)
