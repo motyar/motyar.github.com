@@ -30,17 +30,16 @@ for f in $MARKDOWN_FILES; do
   NEWFILE=${f%.*}.html
   TITLE=$(head -n 1 $f | sed 's/# //g')
   
-  NEXT=`basename "$f" .txt`.html
-  BUF=$(cat $LAST)
-  echo $BUF | sed 's/NEXT/'"$NEXT"'/g' >  $LAST
+  #BUF=$(cat $LAST)
+  #echo $BUF | sed 's/NEXT/'"$NEXT"'/g' >  $LAST
   
   echo "       $f -> $NEWFILE $TITLE $LAST"
   
   cat $ROOT_DIR/includes/header.html | sed 's/P_TITLE/'"$TITLE"'/g' > $NEWFILE
   $PERL $ROOT_DIR/Markdown.pl $f >> $NEWFILE
-  cat $ROOT_DIR/includes/footer.html | sed 's/LAST/'"$LAST"'/g' >> $NEWFILE
+  cat $ROOT_DIR/includes/footer.html >> $NEWFILE
 
-  LAST=`basename "$f" .txt`.html
+  #LAST=`basename "$f" .txt`.html
   #rm $f
 done 
 
