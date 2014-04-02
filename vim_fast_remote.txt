@@ -1,0 +1,21 @@
+Super fast remote editing with Vim
+==================================
+### (Vim+Netrw+SSH tunnel)
+
+I started using Vim last month, was using scp (netrw plugin).
+
+It was so slow on a 2G connection.
+
+I was searching for a solution, and I found something that changes everything. check [http://www.erikzaadi.com/2013/03/07/fast-remote-editing-with-vim/](Fast Remote Editing With Vim)
+
+I tried to auto start and stop ssh tunnel with vim autocmd. check this gist
+
+https://gist.github.com/motyar/9885182
+
+Remote editing over Vim is super fast now. check my .vimrc for more hacks- https://github.com/motyar/dotfiles/blob/master/.vimrc
+
+If this article made any value for you, please recommend.
+
+Thanks
+
+-Motyar

@@ -1,3 +1,4 @@
 # Motyar's blog
 
+- [Super fast remote editing with Vim](./vim_fast_remote.html)
 - [ONe more example](./onemore.html)
