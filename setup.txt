@@ -18,21 +18,20 @@ Enabled login with keys:-
 
 These few rows in `.ssh/config`:-
 
-`host vps
+    host vps
 
-    hostname VPS_IP_ADD
+        hostname VPS_IP_ADD
 
-    user username
+        user username
 
-    Compression yes
+        Compression yes
 
-    Ciphers blowfish-cbc,arcfour
+        Ciphers blowfish-cbc,arcfour
 
-    ControlMaster auto
+        ControlMaster auto
 
-    ControlPath /tmp/%r@%h:%p
+        ControlPath /tmp/%r@%h:%
 
-`
 
 Installed `Vim` and here is my latest `.vimrc`:-
 
