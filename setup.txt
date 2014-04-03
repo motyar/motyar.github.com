@@ -1,12 +1,16 @@
 My development setup
 ======================
+Note to self, but can help others.
+---------------------------------
 
 ### Server
-I own a Digital ocean VPS [https://www.digitalocean.com/?refcode=34a8a2d54244](https://www.digitalocean.com/?refcode=34a8a2d54244).
+I own a Digital ocean [VPS](https://www.digitalocean.com/?refcode=34a8a2d54244).
 
 VPS have installed LAMP on Ubuntu.
 
 ### Local
+
+Installed Ubuntu.
 
 Enabled login with keys:-
 
