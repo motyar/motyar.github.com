@@ -1,5 +1,5 @@
 # Motyar's blog
 
+- [About this blog](about_this_blog.html)
 - [My development setup](setup.html)
 - [Super fast remote editing with Vim](vim_fast_remote.html)
-- [About this blog](about_this_blog.html)
