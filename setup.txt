@@ -19,13 +19,21 @@ Enabled login with keys:-
 These few rows in `.ssh/config`:-
 
 `host vps
+
     hostname VPS_IP_ADD
+
     user username
+
     Compression yes
+
     Ciphers blowfish-cbc,arcfour
+
     ControlMaster auto
+
     ControlPath /tmp/%r@%h:%p
+
 `
+
 Installed `Vim` and here is my latest `.vimrc`:-
 
 [https://github.com/motyar/dotfiles/blob/master/.vimrc](https://github.com/motyar/dotfiles/blob/master/.vimrc)
