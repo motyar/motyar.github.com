@@ -21,7 +21,7 @@ sed 's/.txt/.html/g' list >> index.txt
 
 #MARKDOWN_FILES=`find $1 -name "*.txt"`
 #MARKDOWN_FILES=`find -name "*.txt" -printf '%p\n' | sort -k1 -n`
-MARKDOWN_FILES=`ls -t *.txt`
+MARKDOWN_FILES=`ls -rt *.txt`
 touch index.html
 LAST="index.html"
 NEXT=" "
