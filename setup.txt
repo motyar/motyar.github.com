@@ -3,6 +3,7 @@ My development setup
 Note to self, but can help others.
 ---------------------------------
 
+
 ### Server
 I own a Digital ocean [VPS](https://www.digitalocean.com/?refcode=34a8a2d54244).
 
@@ -14,7 +15,7 @@ Installed Ubuntu.
 
 Enabled login with keys:-
 
-`cat ~/.ssh/id_rsa.pub | ssh username@VPS_IP_ADD 'cat >> .ssh/authorized_keys'`
+    cat ~/.ssh/id_rsa.pub | ssh username@VPS_IP_ADD 'cat >> .ssh/authorized_keys'
 
 These few rows in `.ssh/config`:-
 
@@ -39,7 +40,7 @@ Installed `Vim` and here is my latest `.vimrc`:-
 
 Editing files with Vim Scp. Use path_to_folder to see the Explorer:-
 
-`vim scp://vps/path_to_dir/`
+    vim scp://vps/path_to_dir/
 
 Thats all for now.
 
