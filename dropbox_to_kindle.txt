@@ -1,6 +1,6 @@
 Send files from Dropbox to Kindle
 =================================
-Automation, makes things easy
+Automation makes things easy
 -----------------------------
 You can send file from Dropbox to Kindle, Just put files in your Dropbox and they will be sent to your Kindle.
 
@@ -9,7 +9,7 @@ Here are few steps:-
 ### Setup Send to Kindle by E-mail
 You can send documents to Kindle by sending them to an email address Amazon provices, but you have to set this up. [Learn how](http://www.amazon.com/gp/sendtokindle/email)
 
-### Use this IFTTT Recipe to send document to your Kindle email address from Dropbox.
+### Use IFTTT to send document to your Kindle email address from Dropbox. Here is the Recipe:-
 [Send files to your kindle from dropbox ](https://ifttt.com/recipes/158897-send-files-to-your-kindle-from-dropbox)
 
 Happy automation.
