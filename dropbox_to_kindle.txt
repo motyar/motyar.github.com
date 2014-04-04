@@ -8,7 +8,7 @@ Here are few steps:-
 
 
 
-### Setup Send to Kindle by E-mail
+### Setup 'Send to Kindle by E-mail'
 You can send documents to Kindle by sending them to an email address Amazon provices, but you have to set this up. [Learn how](http://www.amazon.com/gp/sendtokindle/email)
 
 
