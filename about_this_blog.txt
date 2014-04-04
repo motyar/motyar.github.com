@@ -21,4 +21,4 @@ The souce code contains a shell script (And a perl script to change the markdown
 
 1. You can edit header and footer in `includes` folder.
 
-Thats all :)
+Thats all!!

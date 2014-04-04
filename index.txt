@@ -1,6 +1,6 @@
 # Motyar's blog
 
+- [About this blog](about_this_blog.html)
 - [Send files from Dropbox to Kindle](dropbox_to_kindle.html)
 - [My development setup](setup.html)
-- [About this blog](about_this_blog.html)
 - [Super fast remote editing with Vim](vim_fast_remote.html)
