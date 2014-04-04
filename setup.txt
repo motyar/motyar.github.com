@@ -38,7 +38,7 @@ Installed `Vim` and here is my latest `.vimrc`:-
 
 [https://github.com/motyar/dotfiles/blob/master/.vimrc](https://github.com/motyar/dotfiles/blob/master/.vimrc)
 
-Editing files with Vim Scp. Use path_to_folder to see the Explorer:-
+Editing files with Vim Scp. Use **path to folder** to see the Explorer:-
 
     vim scp://vps/path_to_dir/
 
