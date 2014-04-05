@@ -117,12 +117,12 @@ body > header h1 {
     line-height: 1;
     margin-bottom: 0;
     float:left;
+    font-weight: bold;
 }
 
 h1, h2, h3, h4, h5, h6 {
     /* font-family: 'Droid Serif', serif; */
     font-family: "Open Sans";
-    font-weight: bold;
 }
 
 h1 {
