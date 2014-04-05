@@ -2,6 +2,7 @@ About this blog
 ===============
 
 Simple static blog with github pages
+------------------------------------
 
 This blog is powered by Github pages.
 
