@@ -1,0 +1,56 @@
+#!/usr/bin/env bash
+[ -f index.txt ] && rm index.txt
+
+set -eo pipefail
+
+BIN_DIR=$(cd $(dirname $0); pwd)
+ROOT_DIR=$BIN_DIR
+PERL=`which perl`
+echo "$POST_DIR"
+
+echo "">list 
+for f in $(find $1 -name "*.txt")
+do
+echo "- ["$(head -n 1 $f | sed 's/# //g')"]("$f")" >> list
+done
+
+
+echo "">list 
+for f in $(ls -t *.txt)
+do
+echo "- ["$(head -n 1 $f | sed 's/# //g')"]("$f")" >> list
+done
+
+echo "# Motyar's blog"> index.txt 
+sed 's/.txt/.html/g' list >> index.txt
+
+#rm list.txt
+
+#MARKDOWN_FILES=`find $1 -name "*.txt"`
+#MARKDOWN_FILES=`find -name "*.txt" -printf '%p\n' | sort -k1 -n`
+MARKDOWN_FILES=`ls -rt *.txt`
+touch index.html
+LAST="index.html"
+NEXT=" "
+
+for f in $MARKDOWN_FILES; do
+  
+  NEWFILE=${f%.*}.html
+  TITLE=$(head -n 1 $f | sed 's/# //g')
+  
+  #BUF=$(cat $LAST)
+  #echo $BUF | sed 's/NEXT/'"$NEXT"'/g' >  $LAST
+  
+  echo "       $f -> $NEWFILE $TITLE $LAST"
+  
+  cat $ROOT_DIR/includes/header.html | sed 's/P_TITLE/'"$TITLE"'/g' > $NEWFILE
+  $PERL $ROOT_DIR/Markdown.pl $f >> $NEWFILE
+  cat $ROOT_DIR/includes/footer.html >> $NEWFILE
+
+  #LAST=`basename "$f" .txt`.html
+  #rm $f
+done 
+
+git add -A . 
+git commit -m "Updated" 
+git push --all --force

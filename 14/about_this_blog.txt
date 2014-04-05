@@ -1,0 +1,25 @@
+About this blog
+===============
+
+Simple static blog with github pages
+------------------------------------
+
+This blog is powered by Github pages.
+
+The souce code contains a shell script (And a perl script to change the markdown to html).
+
+### How to install.
+
+1. Just clone the http://github.com/motyar/motyar.github.com
+2. Remove all the txt files.
+
+### You have to follow simple steps to add new post.
+
+1. Write a txt file in Markdown.
+2. Run `./update`.
+
+### Customization 
+
+1. You can edit header and footer in `includes` folder.
+
+Thats all!!

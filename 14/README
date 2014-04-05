@@ -1,0 +1,15 @@
+cd $HOME
+
+git clone https://github.com/motyar/motyar.github.com.git
+
+cd motyar.github.com
+
+git remote set-url origin git@github.com:motyar/motyar.github.com
+
+chmod +x update
+
+vi newpost.txt
+
+./update
+
+DONE :)
