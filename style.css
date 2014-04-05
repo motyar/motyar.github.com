@@ -66,8 +66,7 @@ header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-
-        transition: all linear 800ms;
+    transition: all linear 800ms;
     -o-transition: all linear 800ms;
     -moz-transition: all linear 800ms;
     -webkit-transition: all linear 800ms;
@@ -234,8 +233,7 @@ th {
 
 
 body {
-    width: 648px;
-    padding: 0 60px;
+    width: 90%;
     margin: 0em auto;
 }
 
@@ -290,9 +288,6 @@ body > header {
 }
 
 article  {
-    width: 700px;
-    padding: 10px 20px 10px 0;
-   /* padding-left: 168px; */
     margin-top: 0.5em;
 }
 
