@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Motyar dot com</title>
+	<link rel="shortcut icon" href="http://motyar.com/favicon.ico">  
+    <link rel="icon" type="image/ico" 
+href="http://motyar.com/favicon.ico">
+	<link href="style.css" rel="stylesheet" 
+type="text/css">
+    <meta name="author" content="Dharmveer Motyar">
+    <meta name="keywords" content="dharmmotyar, motyar,web developer, Php, Jquery, HTML, CSS">
+    <meta name="description" content="The portfolio site of Dharmveer 
+Motyar, a Php developer based in Sriganganagar Rajsthan, India.">
+    </head><body>
+
+			<div class="welcome"><div class="centered">WELCOME</div></div>
+
+		<div id="icard">	
+<IFRAME border='0' frameborder='0' height='100' src='http://www.google.com/s2/widgets/ProfileCard?uid=dharmmotyar&bc=1' width='100%' style="border:red solid 0px; " ></IFRAME>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+//set drawmode false
+function dream(){
+var color = Math.round(0xffffff * Math.random()).toString(16);
+//alert(color);
+var x = Math.floor(Math.random()*$(window).width());
+var y = Math.floor(Math.random()*$(window).height());
+//alert(x+"--"+y);
+var rgb  = Math.floor(Math.random()*255)+','+Math.floor(Math.random()*255)+','+Math.floor(Math.random()*255);
+drawingpix = $('<span>').attr({class: 'drawingpix'}).hide();
+							 $(document.body).append(drawingpix); //-webkit-gradient(radial, 50% 50%, 0, 50% 50%, 70.5, from(rgba(207, 181, 2, 0.0976563)), to(rgba(207, 181, 2, 0.398438)));
+							 drawingpix.css({
+											'background-color':color,
+											'background':'-moz-radial-gradient(closest-side, rgba(255, 255, 255, 0.1), rgba('+rgb+', 1)) repeat scroll 0 0 transparent',
+											'border-radius':'100px',
+											'-moz-border-radius': '100px',
+											'-webkit-border-radius': '100px',
+											'z-index':-1,
+											top: y-14,	//offsets
+											left: x-14 //offsets
+											}).show().animate({
+																height:'500px',
+																width:'500px',
+																'border-radius':'500px',
+																'-moz-border-radius': '500px',
+																'-webkit-border-radius': '500px',
+																
+																opacity: 0.4,
+																top: y-250,	//offsets
+																left: x-250
+						   
+							}, 9000);// .fadeOut(2000);
+							explode(x-250, y-250, drawingpix)
+
+							 window.setTimeout('dream()',500);
+							
+}
+function explode(x, y, dream) {
+    dream.animate({
+        height: '600px',
+        width: '600px',
+        'border-radius': '2000px',
+        '-moz-border-radius': '2000px',
+        '-webkit-border-radius': '2000px',
+        opacity: 0,
+        top: y -50,
+        left: x-50 
+
+    }, 1000, function () {
+        dream.remove();
+    });
+
+}
+
+$(document).ready(function() {	
+     
+                     $(document).mouseover(function(){$(".welcome").fadeOut(2000)});
+					 dream();
+});
+
+</script>
+
+ </body></html>
