@@ -122,7 +122,7 @@ body > header h1 {
 h1, h2, h3, h4, h5, h6 {
    /* font-family: 'Droid Serif', serif; */
    font-family: "Open Sans";
-    font-weight: normal;
+    /* font-weight: normal; */
 }
 
 h1 {
