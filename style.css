@@ -192,6 +192,7 @@ nav ul {
 }
 
 article h1 a {
+    font-family: "Open Sans";
     color: green; 
     font-size:0.3em;
     
