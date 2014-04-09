@@ -36,7 +36,7 @@ function authenticate(code, cb) {
                 dataType: "json",
                 complete: function(jqXHR, textStatus){
                         if (textStatus === 'error') {
-                                alert("Got an error"+textStatus+data);
+                                alert("Got an error"+textStatus+jqXHR);
                         }
                         else{
                                 //alert('Posted successfully');
