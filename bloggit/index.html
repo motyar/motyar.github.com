@@ -21,7 +21,9 @@ function cbb(a,b){
     alert(a+ ' _________ '+b);
 }
 
-authenticate(authCode,'cbb');
+$(document).ready(function(){
+    authenticate(authCode,'cbb');
+});
 
 function authenticate(code, cb) {
     var data = JSON.stringify({
