@@ -1,5 +1,6 @@
 # Motyar's blog
 
+- [Simple test](test.html)
 - [About this blog](about_this_blog.html)
 - [Send files from Dropbox to Kindle](dropbox_to_kindle.html)
 - [My development setup](setup.html)
