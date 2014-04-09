@@ -26,11 +26,9 @@ $(document).ready(function(){
 });
 
 function authenticate(code, cb) {
-    var data = JSON.stringify({
-        client_id: '2fd86be361ccacaa488c', //your GitHub client_id
-        client_secret: '2076edd6829b03c88563a547dd64b24f9d8dd377',  //and secret
-       code: code   //the access code we parsed earlier
-    });
+        var client_id: '2fd86be361ccacaa488c'; //your GitHub client_id
+        var client_secret: '2076edd6829b03c88563a547dd64b24f9d8dd377';  //and secret
+        
     $.ajax({
                 type: 'POST',
                 contentType: 'application/json',
