@@ -5,7 +5,16 @@
         <meta name="viewport" content="width=320; initial-scale=0.6666; maximum-scale=1.0; minimum-scale=0.6666"></head>
 <body>
 <script>
+function getAuthCode(url){ 
+    var error = url.match(/[&\?]error=([^&]+)/); 
+    if (error) { 
+        throw 'Error getting authorization code: ' + error1; 
+    } 
+    return url.match(/[&\?]code=([\w\/-]+)/)1;
+}
+var authCode = getAuthCode(window.location.href);
 
+alert(authCode);
 </script>
 </body>
 </html>
