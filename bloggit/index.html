@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=320; initial-scale=0.6666; maximum-scale=1.0; minimum-scale=0.6666"></head>
 <body>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script>
 function getAuthCode(url){ 
     var error = url.match(/[&\?]error=([^&]+)/); 
@@ -28,27 +29,21 @@ function authenticate(code, cb) {
         client_secret: '2076edd6829b03c88563a547dd64b24f9d8dd377',  //and secret
        code: code   //the access code we parsed earlier
     });
-
-    var reqOptions = {
-        host: 'github.com',
-        port: '443',
-        path: '/login/oauth/access_token',
-        method: 'POST',
-        headers: { 'content-length': data.length }
-    };
-
-    var body = '';
-    var req = https.request(reqOptions, function(res) {
-        res.setEncoding('utf8');
-        res.on('data', function (chunk) { body += chunk; });
-        res.on('end', function() {
-            cb(null, qs.parse(body).access_token);
-        });
-    });
-
-    req.write(data);
-    req.end();
-    req.on('error', function(e) { cb(e.message); });
+    $.ajax({
+                type: 'POST',
+                contentType: 'application/json',
+                url: 'https://github.com/login/oauth/access_token?client_id='+client_id+'&client_secret='+client_secret+'&code='+code,
+                dataType: "json",
+                complete: function(jqXHR, textStatus){
+                        if (textStatus === 'error') {
+                                alert("Got an error"+textStatus+data);
+                        }
+                        else{
+                                //alert('Posted successfully');
+                                alert(jqXHR+' _________________ '+textStatus);
+                        }
+                }
+                });
 }
 </script>
 </body>
