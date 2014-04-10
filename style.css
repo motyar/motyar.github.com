@@ -1,3 +1,4 @@
+/*
 @font-face {
   font-family: 'Droid Serif';
   font-style: normal;
@@ -28,7 +29,7 @@
   font-weight: 700;
   src: local('Droid Sans Bold'), local('DroidSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/droidsans/v3/EFpQQyG9GqCrobXxL-KRMQFhaRv2pGgT5Kf0An0s4MM.woff) format('woff');
 }
-
+*/
 pre{
    overflow: hidden;
 }
