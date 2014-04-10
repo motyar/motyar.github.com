@@ -112,7 +112,7 @@ body {
    
 }
 
-body > header h1 {
+body > header h1 a{
     /* font-family: 'Droid Serif', sans-serif; */
 
     font-family: Helvetica;
