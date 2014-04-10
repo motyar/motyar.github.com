@@ -144,7 +144,9 @@ h1, h2 {
 
 a {
     text-decoration: none;
-   /* color: #06C; */
+       color: rgb(88, 130, 250);
+   /*
+    color: #06C; */
 }
 
 a:hover {
