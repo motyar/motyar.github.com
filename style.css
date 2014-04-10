@@ -115,7 +115,8 @@ body {
 body > header h1 {
     /* font-family: 'Droid Serif', sans-serif; */
 
-    font-family:Georgia,serif;
+    font-family: Helvetica;
+    font-weight: bold;
     color:red;
     font-size: 150%;
     line-height: 1;
