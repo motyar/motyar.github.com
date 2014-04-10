@@ -4,8 +4,7 @@
     if(edit!=""){//Redirect to github edit
         //window.location.href = 'http://github.com';
 
-        var editUrl = url.replace("//","//github.com/motyar/motyar.github.com/").replace("motyar.github.io/","/edit/master/").replace("?edit="+edit,"");
-        alert(editUrl);
-    
+        var editUrl = url.replace("//","//github.com/motyar/motyar.github.com/").replace("motyar.github.io/","edit/master/").replace("?edit="+edit,"");
+        window.location.href = editUrl; 
     }
 })();
