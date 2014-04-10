@@ -151,7 +151,9 @@ a {
 
 a:hover {
  /* color: #F30; */
-  text-shadow: 1px 1px 3px #D5D5D5;
+ color: #06C;  
+ text-shadow: 1px 1px 3px #D5D5D5;
+
 }
 
 p, ul, ol {
