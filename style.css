@@ -113,11 +113,9 @@ body {
 }
 
 body > header h1 a{
-    /* font-family: 'Droid Serif', sans-serif; */
-
     font-family: Helvetica;
     font-weight: bold;
-    color:red;
+    color: rgb(88, 130, 250);
     font-size: 150%;
     line-height: 1;
     margin-bottom: 0;
@@ -126,7 +124,6 @@ body > header h1 a{
 }
 
 h1, h2, h3, h4, h5, h6 {
-    /* font-family: 'Droid Serif', serif; */
     font-family:Georgia,serif;
     font-weight: normal;
 }
