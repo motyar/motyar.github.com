@@ -4,7 +4,7 @@
     if(edit!=""){//Redirect to github edit
         //window.location.href = 'http://github.com';
 
-        var editUrl = url.replace("//","//github.com/motyar/motyar.github.com/").replace(".io/","/edit/master/").replace("?edit="+edit,"");
+        var editUrl = url.replace("//","//github.com/motyar/").replace("github.io/","/edit/master/").replace("?edit="+edit,"");
         alert(editUrl);
     
     }
