@@ -114,10 +114,8 @@ body {
 
 body > header h1 a{
     font-family: 'Droid Sans';
-    font-weight: bold;
     color: rgb(88, 130, 250);
     font-size: 150%;
-    text-transform: uppercase;
     line-height: 1;
     margin-bottom: 0;
     float:left;
