@@ -1,4 +1,4 @@
-# Motyar's blog
+# Blog
 
 - [About this blog](about_this_blog.html)
 - [Send files from Dropbox to Kindle](dropbox_to_kindle.html)
