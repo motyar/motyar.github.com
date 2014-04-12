@@ -1,7 +1,7 @@
 About this blog
 ===============
 
-Simple static blog with github pages
+Simple static blog with github pages and shell
 ------------------------------------
 
 This blog is powered by Github pages.
