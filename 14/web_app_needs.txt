@@ -1,0 +1,11 @@
+What do you need to make a web app?
+===================================
+Here’s some things you need
+---------------------------
+* A plan to solve a well defined real problem
+* How to design UX and visual
+* Marketing plan
+* Code editor (Vim?)
+* A web server
+* Database
+* Payment processor
