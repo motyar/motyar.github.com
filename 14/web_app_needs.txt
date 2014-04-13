@@ -8,4 +8,5 @@ Here’s some things you need
 * Code editor (Vim?)
 * A web server
 * Database
+* Domain name
 * Payment processor
