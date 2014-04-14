@@ -22,7 +22,7 @@ function cbb(a,b){
 }
 
 $(document).ready(function(){
-    //authenticate(authCode,'cbb');
+    authenticate(authCode,'cbb');
 });
 
 function authenticate(code, cb) {
@@ -38,6 +38,7 @@ function authenticate(code, cb) {
                         }
                         else{
                                 //alert('Posted successfully');
+                                alert(jqXHR.access_token);
                                 alert(jqXHR[0]+jqXHR[1]+' _________________ '+textStatus);
                         }
                 }
