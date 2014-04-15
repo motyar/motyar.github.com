@@ -32,7 +32,7 @@ function authenticate(code, cb) {
                 contentType: 'application/json',
                 url: 'http://motyar.info/github/auth.php?code='+code,
                 dataType: "json",
-                complete: function(jqXHR, textStatus){
+                complete: function(jqXHR){
                         if (textStatus === 'error') {
                                 alert("Got an error"+textStatus+jqXHR);
                         }
