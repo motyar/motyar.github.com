@@ -1,0 +1,33 @@
+Host your website free on Github
+================================
+Any static site can be hosted on Github pages for FREE
+------------------------------------------------------
+Here are few steps, I followed to setup a website in one hour:-
+
+* Get a domain name on [BigRock](http://www.bigrock.in/?coupon=lobi.mobi).
+* GoTo **DNS Managment** and add two A records. 
+    www.domain.com   192.30.252.153 
+    domain.com       192.30.252.154 
+* Login to github.com and create a new **Repository** (Let's say named domain.com )
+* Clone that repo, using
+    git clone git@github.com:user/domain.com.git
+* CD into that directory.
+    cd domain.com
+* Create a brance named 'master' and add CNAME file
+    git checkout --orphan master
+    echo 'domain.com'>CNAME
+    git add CNAME
+    git commit -m 'Added CNAME'
+    git push origin master
+
+* Create a branch 'gh-pages'
+    git checkout --orphan gh-pages
+* Create index.html file 
+    echo 'Hello Pooh'>index.html
+* Push this file to github using:
+    git add index.html
+    git commit -m 'Index page'
+    git push origin gh-pages
+* If everything web well, your site should be live on http://domain.com
+
+ 

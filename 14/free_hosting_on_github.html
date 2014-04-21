@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+  <title>Host your website free on Github • Motyar</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name=viewport content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header>
+    <h1><a href="/">Motyar</a></h1>
+</header>
+<div id="main">
+<article class="post">
+<h1>Host your website free on Github</h1>
+
+<h2>Any static site can be hosted on Github pages for FREE</h2>
+
+<p>Here are few steps, I followed to setup a website in one hour:-</p>
+
+<ul>
+<li>Get a domain name on <a href="http://www.bigrock.in/?coupon=lobi.mobi">BigRock</a>.</li>
+<li>GoTo <strong>DNS Managment</strong> and add two A records. 
+www.domain.com   192.30.252.153 
+domain.com       192.30.252.154 </li>
+<li>Login to github.com and create a new <strong>Repository</strong> (Let's say named domain.com )</li>
+<li>Clone that repo, using
+git clone git@github.com:user/domain.com.git</li>
+<li>CD into that directory.
+cd domain.com</li>
+<li><p>Create a brance named 'master' and add CNAME file
+git checkout --orphan master
+echo 'domain.com'>CNAME
+git add CNAME
+git commit -m 'Added CNAME'
+git push origin master</p></li>
+<li><p>Create a branch 'gh-pages'
+git checkout --orphan gh-pages</p></li>
+<li>Create index.html file 
+echo 'Hello Pooh'>index.html</li>
+<li>Push this file to github using:
+git add index.html
+git commit -m 'Index page'
+git push origin gh-pages</li>
+<li>If everything web well, your site should be live on http://domain.com</li>
+</ul>
+</article>
+</div>
+<footer>
+<p><a href="/14">Blog(2014)</a> | <a href="http://github.com/motyar">Code</a> | <a href="/cv">Résumé</a> | Follow me on twitter <a href="http://twitter.com/motyar" target="_blank">@motyar</a></p>
+<small class="Footer-legal">This entire site is uncopyrighted.</small>
+</footer> 
+<!--
+<script src="/app.js"></script>
+-->
+</body>
+</html>
+<link rel="stylesheet" href="/style.css" type="text/css" media="screen" />
