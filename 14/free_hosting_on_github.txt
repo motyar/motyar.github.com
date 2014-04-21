@@ -12,10 +12,13 @@ Here are few steps, I followed to setup a website in one hour:-
 
 * Login to github.com and create a new **Repository** (Let's say named domain.com )
 * Clone that repo, using
+
         git clone git@github.com:user/domain.com.git
 * CD into that directory.
+
         cd domain.com
 * Create a brance named 'master' and add CNAME file
+
         git checkout --orphan master
         echo 'domain.com'>CNAME
         git add CNAME
@@ -23,10 +26,13 @@ Here are few steps, I followed to setup a website in one hour:-
         git push origin master
 
 * Create a branch 'gh-pages'
+
         git checkout --orphan gh-pages
 * Create index.html file 
+
         echo 'Hello Pooh'>index.html
 * Push this file to github using:
+
         git add index.html
         git commit -m 'Index page'
         git push origin gh-pages
