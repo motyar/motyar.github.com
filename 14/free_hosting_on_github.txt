@@ -25,6 +25,7 @@ Here are few steps to setup a website in one hour:-
         git commit -m 'Added CNAME'
         git push origin master
 * Remove the *CNAME* file
+
         rm CNAME
 
 * Create a branch 'gh-pages'
