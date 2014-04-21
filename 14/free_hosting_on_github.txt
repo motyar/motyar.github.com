@@ -10,7 +10,7 @@ Here are few steps, I followed to setup a website in one hour:-
         www.domain.com   192.30.252.153 
         domain.com       192.30.252.154 
 
-* Login to github.com and create a new **Repository** (Let's say named domain.com )
+* Login to github.com and [create a new](http://github.com/new) **Repository** (Let's say named domain.com )
 * Clone that repo, using
 
         git clone git@github.com:user/domain.com.git
