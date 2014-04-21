@@ -38,7 +38,7 @@ Here are few steps to setup a website in one hour:-
         git add index.html
         git commit -m 'Index page'
         git push origin gh-pages
-* Test it by opening [http://username.github.io/domain.com](http://username.github.io/domain.com)
+* Test it by opening **http://username.github.io/domain.com**
 * If everything went well, your site should be live on **http://domain.com**
 
 
