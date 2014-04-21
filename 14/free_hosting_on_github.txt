@@ -6,6 +6,7 @@ Here are few steps, I followed to setup a website in one hour:-
 
 * Get a domain name on [BigRock](http://www.bigrock.in/?coupon=lobi.mobi).
 * GoTo **DNS Managment** and add two A records. 
+
             www.domain.com   192.30.252.153 
             domain.com       192.30.252.154 
 * Login to github.com and create a new **Repository** (Let's say named domain.com )
