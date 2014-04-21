@@ -1,7 +1,7 @@
 <!DOCTYPE html> 
 <html lang="en"> 
 <head>
-  <title>Host your website free on Github • Motyar</title>
+  <title>Host your website on Github for FREE • Motyar</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
@@ -11,14 +11,14 @@
 </header>
 <div id="main">
 <article class="post">
-<h1>Host your website free on Github</h1>
+<h1>Host your website on Github for FREE</h1>
 
 <h2>Any static site can be hosted on Github pages for FREE</h2>
 
-<p>Here are few steps, I followed to setup a website in one hour:-</p>
+<p>Here are few steps to setup a website in one hour:-</p>
 
 <ul>
-<li>Get a domain name on <a href="http://www.bigrock.in/?coupon=lobi.mobi">BigRock</a>.</li>
+<li>Get a domain name.( on <a href="http://www.bigrock.in/?coupon=lobi.mobi">BigRock</a>).</li>
 <li><p>GoTo <strong>DNS Managment</strong> and add two A records. </p>
 
 <pre><code>www.domain.com   192.30.252.153 
@@ -27,13 +27,13 @@ domain.com       192.30.252.154
 <li><p>Login to github.com and <a href="http://github.com/new">create a new</a> <strong>Repository</strong> (Let's say named domain.com )</p></li>
 <li><p>Clone that repo, using</p>
 
-<pre><code>git clone git@github.com:user/domain.com.git
+<pre><code>git clone git@github.com:username/domain.com.git
 </code></pre></li>
-<li><p>CD into that directory.</p>
+<li><p>cd into that directory.</p>
 
 <pre><code>cd domain.com
 </code></pre></li>
-<li><p>Create a brance named 'master' and add CNAME file</p>
+<li><p>Create a branch named 'master' and add CNAME file</p>
 
 <pre><code>git checkout --orphan master
 echo 'domain.com'&gt;CNAME
@@ -41,6 +41,8 @@ git add CNAME
 git commit -m 'Added CNAME'
 git push origin master
 </code></pre></li>
+<li><p>Remove the <em>CNAME</em> file
+    rm CNAME</p></li>
 <li><p>Create a branch 'gh-pages'</p>
 
 <pre><code>git checkout --orphan gh-pages
@@ -55,7 +57,8 @@ git push origin master
 git commit -m 'Index page'
 git push origin gh-pages
 </code></pre></li>
-<li>If everything web well, your site should be live on http://domain.com</li>
+<li>Test it by opening <a href="http://username.github.io/domain.com">http://username.github.io/domain.com</a></li>
+<li>If everything went well, your site should be live on <strong>http://domain.com</strong></li>
 </ul>
 </article>
 </div>

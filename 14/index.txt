@@ -1,6 +1,6 @@
 # Blog
 
-- [Host your website free on Github](free_hosting_on_github.html)
+- [Host your website on Github for FREE](free_hosting_on_github.html)
 - [What to write?](what_to_write.html)
 - [What do you need to make a web app?](web_app_needs.html)
 - [About this blog](about_this_blog.html)
