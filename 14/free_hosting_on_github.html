@@ -26,23 +26,23 @@ domain.com       192.30.252.154
 </code></pre></li>
 <li><p>Login to github.com and create a new <strong>Repository</strong> (Let's say named domain.com )</p></li>
 <li>Clone that repo, using
-git clone git@github.com:user/domain.com.git</li>
+    git clone git@github.com:user/domain.com.git</li>
 <li>CD into that directory.
-cd domain.com</li>
+    cd domain.com</li>
 <li><p>Create a brance named 'master' and add CNAME file
-git checkout --orphan master
-echo 'domain.com'>CNAME
-git add CNAME
-git commit -m 'Added CNAME'
-git push origin master</p></li>
+    git checkout --orphan master
+    echo 'domain.com'>CNAME
+    git add CNAME
+    git commit -m 'Added CNAME'
+    git push origin master</p></li>
 <li><p>Create a branch 'gh-pages'
-git checkout --orphan gh-pages</p></li>
+    git checkout --orphan gh-pages</p></li>
 <li>Create index.html file 
-echo 'Hello Pooh'>index.html</li>
+    echo 'Hello Pooh'>index.html</li>
 <li>Push this file to github using:
-git add index.html
-git commit -m 'Index page'
-git push origin gh-pages</li>
+    git add index.html
+    git commit -m 'Index page'
+    git push origin gh-pages</li>
 <li>If everything web well, your site should be live on http://domain.com</li>
 </ul>
 </article>
