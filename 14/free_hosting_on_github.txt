@@ -36,7 +36,7 @@ Here are few steps to setup a website in one hour:-
         echo 'Hello Pooh'>index.html
 * Push this file to github using:
 
-        git add index.html
+        git add -A .
         git commit -m 'Index page'
         git push origin gh-pages
 * Test it by opening **http://username.github.io/domain.com**
