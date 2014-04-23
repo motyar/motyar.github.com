@@ -14,30 +14,27 @@ Here are few steps to setup a website in one hour:-
 * Clone that repo, using
 
         git clone git@github.com:username/domain.com.git
+
 * cd into that directory.
 
         cd domain.com
-* Create a branch named 'master' and add CNAME file
-
-        git checkout --orphan master
-        echo 'domain.com'>CNAME
-        git add CNAME
-        git commit -m 'Added CNAME'
-        git push origin master
-* Remove the *CNAME* file
-
-        rm CNAME
-
-* Create a branch 'gh-pages'
+        
+* Create a branch named 'gh-pages'.
 
         git checkout --orphan gh-pages
-* Create index.html file 
+
+* Create the *CNAME* file.
+
+        echo 'domain.com'>CNAME
+
+* Create index.html file.
 
         echo 'Hello Pooh'>index.html
+
 * Push this file to github using:
 
         git add -A .
-        git commit -m 'Index page'
+        git commit -m 'First commit'
         git push origin gh-pages
 * Test it by opening **http://username.github.io/domain.com**
 * If everything went well, your site should be live on **http://domain.com**

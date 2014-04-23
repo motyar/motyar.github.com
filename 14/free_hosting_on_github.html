@@ -33,30 +33,22 @@ domain.com       192.30.252.154
 
 <pre><code>cd domain.com
 </code></pre></li>
-<li><p>Create a branch named 'master' and add CNAME file</p>
-
-<pre><code>git checkout --orphan master
-echo 'domain.com'&gt;CNAME
-git add CNAME
-git commit -m 'Added CNAME'
-git push origin master
-</code></pre></li>
-<li><p>Remove the <em>CNAME</em> file</p>
-
-<pre><code>rm CNAME
-</code></pre></li>
-<li><p>Create a branch 'gh-pages'</p>
+<li><p>Create a branch named 'gh-pages'.</p>
 
 <pre><code>git checkout --orphan gh-pages
 </code></pre></li>
-<li><p>Create index.html file </p>
+<li><p>Create the <em>CNAME</em> file.</p>
+
+<pre><code>echo 'domain.com'&gt;CNAME
+</code></pre></li>
+<li><p>Create index.html file.</p>
 
 <pre><code>echo 'Hello Pooh'&gt;index.html
 </code></pre></li>
 <li><p>Push this file to github using:</p>
 
 <pre><code>git add -A .
-git commit -m 'Index page'
+git commit -m 'First commit'
 git push origin gh-pages
 </code></pre></li>
 <li>Test it by opening <strong>http://username.github.io/domain.com</strong></li>
