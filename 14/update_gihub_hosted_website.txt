@@ -2,7 +2,9 @@ How to Update Github hosted static website
 ==========================================
 By just typing a single command
 -------------------------------
-I have moved few of my websites to ***Github Pages***. Check the [blog post about it](http://motyar.github.io/14/free_hosting_on_github.html) In this post we are talking about **how to update** these sites.
+I have moved few of my websites to **Github Pages**. Check the [blog post about it](http://motyar.github.io/14/free_hosting_on_github.html).
+
+In this post we are talking about **how to update** these sites.
 
 Here are few steps:
 
