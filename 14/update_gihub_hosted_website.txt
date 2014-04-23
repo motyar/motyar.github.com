@@ -1,0 +1,26 @@
+How to Update Github hosted static website
+==========================================
+By just runing ./update
+-----------------------
+I have moved few of my websites to ***Github Pages***. Check the [blog post about it](http://motyar.github.io/14/free_hosting_on_github.html) In this post we are talking about ***how to update** these sites.
+
+Here are few steps:
+* You need to clone the repo, only the gh-pages branch.
+
+    git clone git@github.com:username/domain.com.git -b gh-pages
+* Edit, Remove or Add files and data you want to.
+
+* Create a new file named 'update' with these contents
+
+    git add -A . 
+    git commit -m "Updated" 
+    git push origin gh-pages
+* Give it permissions by runing this command
+
+    chmod +x update
+* Run this script
+
+    ./update
+
+* Done, Updated!!
+

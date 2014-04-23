@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+  <title>How to Update Github hosted static website • Motyar</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name=viewport content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header>
+    <h1><a href="/">Motyar</a></h1>
+</header>
+<div id="main">
+<article class="post">
+<h1>How to Update Github hosted static website</h1>
+
+<h2>By just runing ./update</h2>
+
+<p>I have moved few of my websites to <strong><em>Github Pages</em></strong>. Check the <a href="http://motyar.github.io/14/free_hosting_on_github.html">blog post about it</a> In this post we are talking about <strong>*how to update</strong> these sites.</p>
+
+<p>Here are few steps:
+* You need to clone the repo, only the gh-pages branch.</p>
+
+<pre><code>git clone git@github.com:username/domain.com.git -b gh-pages
+</code></pre>
+
+<p>* Edit, Remove or Add files and data you want to.</p>
+
+<ul>
+<li><p>Create a new file named 'update' with these contents</p>
+
+<p>git add -A . 
+git commit -m "Updated" 
+git push origin gh-pages</p></li>
+<li><p>Give it permissions by runing this command</p>
+
+<p>chmod +x update</p></li>
+<li><p>Run this script</p>
+
+<p>./update</p></li>
+<li><p>Done, Updated!!</p></li>
+</ul>
+</article>
+</div>
+<footer>
+<p><a href="/14">Blog</a> | <a href="http://github.com/motyar">Code</a> | <a href="/cv">Résumé</a> | Follow me on twitter <a href="http://twitter.com/motyar" target="_blank">@motyar</a></p>
+<small class="Footer-legal">This entire site is uncopyrighted.</small>
+</footer> 
+<!--
+<script src="/app.js"></script>
+-->
+</body>
+</html>
+<link rel="stylesheet" href="/style.css" type="text/css" media="screen" />
