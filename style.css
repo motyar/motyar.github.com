@@ -113,14 +113,17 @@ body {
 }
 
 body > header h1 a{
-   /* font-family: 'Droid Sans';*/
-   font-family:'Helvetica';
     color: rgb(88, 130, 250);
-    /* font-size: 150%;*/
-    text-transform:uppercase;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    float: left;
+    letter-spacing: -1px;
+    font-family: 'Open Sans',sans-serif;
     line-height: 1;
-    margin-bottom: 0;
-    float:left;
+    font-weight: bold;
+    font-size: 5rem;
+    margin-bottom: 0.5em;
+    margin-top: 0.2em;
 }
 
 h1, h2, h3, h4, h5, h6 {
