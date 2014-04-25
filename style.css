@@ -112,6 +112,10 @@ body {
    
 }
 
+
+body > header{
+    width:100%;
+}
 body > header h1 a{
     color: rgb(88, 130, 250);
     text-transform: uppercase;
