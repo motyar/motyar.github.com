@@ -113,19 +113,25 @@ body {
 }
 
 
-body > header{
-    width:100%;
+body > header {
+    
+    overflow: hidden;
+    display:block;
+    border-bottom: 1px solid #EBEBEB;
+    padding: 10px 12px 9px 10px;
+    margin-bottom: 1em;
+    margin-top:2em;
+
 }
 body > header h1 a{
     color: rgb(88, 130, 250);
-    text-transform: uppercase;
     margin-bottom: 0px;
     float: left;
     letter-spacing: -1px;
     font-family: 'Open Sans',sans-serif;
     line-height: 1;
     font-weight: bold;
-    font-size: 5rem;
+    font-size: 3rem;
     margin-bottom: 0.5em;
     margin-top: 0.2em;
 }
@@ -274,16 +280,6 @@ header nav a {
     padding: 20px 0;
 }
 
-body > header {
-    
-    overflow: hidden;
-    display:block;
-    border-bottom: 1px solid #EBEBEB;
-    padding: 10px 12px 9px 10px;
-    margin-bottom: 1em;
-    margin-top:2em;
-
-}
 
 .pub-list li time {
     display: block;
