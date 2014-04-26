@@ -131,6 +131,7 @@ p, ul, ol {
 
 ul {
     list-style-type: binary;
+    padding-left: 60px;
 }
 
 
