@@ -130,9 +130,8 @@ p, ul, ol {
 }
 
 ul {
-    list-style-type: circle;
+    list-style-type: square;
     list-style-type: binary;
-    padding-left: 60px;
 }
 
 
