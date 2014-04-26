@@ -4,7 +4,11 @@
   <title>Motyar • An entrepreneur and developer from India. Creating value using code.</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name=viewport content="width=device-width, initial-scale=1">
+<!--
 	<link rel="stylesheet" href="//motyar.github.io/style.css" type="text/css" media="screen" />
+    
+    
+    -->
 </head>
 <body>
 <header>
@@ -49,5 +53,17 @@
 <!--
 <script src="app.js"></script>
 -->
+<script>
+function addStyle(css){
+            var datuURIs = document.createElement("link");
+            document.head = document.head || document.getElementsByTagName('head'[0]);
+            datuURIs.href = "data:text/css,"+css;
+            datuURIs.rel = "stylesheet";
+            document.head.appendChild(datuURIs);
+}
+(function(){
+    addStyle('h1{color:pink;}');
+})
+</script>
 </body>
 </html>
