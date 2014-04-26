@@ -58,7 +58,8 @@ html {
 }
 
 body {
-    font-family:Georgia,serif;
+    /* font-family:Georgia,serif; */
+    font-family:Verdana,Arial,Helvetica,sans-serif;
     font-size: 100%;
     background-color: #fff;
     color: #333;
