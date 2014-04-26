@@ -54,15 +54,12 @@
 <script src="app.js"></script>
 -->
 <script>
-function addStyle(css){
-            var datuURIs = document.createElement("link");
-            document.head = document.head || document.getElementsByTagName('head'[0]);
-            datuURIs.href = "data:text/css,"+css;
-            datuURIs.rel = "stylesheet";
-            document.head.appendChild(datuURIs);
-}
 (function(){
-    addStyle('h1{color:pink;}');
+    var datuURIs = document.createElement("link");
+    document.head = document.head || document.getElementsByTagName('head'[0]);
+    datuURIs.href = "style.css";
+    datuURIs.rel = "stylesheet";
+    document.head.appendChild(datuURIs);
 })
 </script>
 </body>
