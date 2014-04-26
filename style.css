@@ -130,13 +130,6 @@ ul {
     list-style-type: circle;
 }
 
-li {
-    
-}
-
-ul ul {
-    margin: 0;
-}
 
 em {
     font-style: italic;
@@ -144,36 +137,6 @@ em {
 
 strong {
     font-weight: 900;
-}
-
-time {
-    color: hsla(30, 10%, 50%, 0.6);
-    font-size: 12px;
-}
-
-header nav {
-    font-size: 1.2em;
-    line-height: 1;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-article h1 a {
-    color: green; 
-    font-size:0.3em;
-    
-}
-
-article h1 a:hover {
-    color: #06C;
-}
-
-article  nav {
-    text-transform: uppercase;
-    font-size: 13px;
-    color: hsla(30, 10%, 50%, 0.6);
 }
 
 footer {
@@ -192,60 +155,9 @@ code,
     background-color: #f3f3f3;
 }
 
-aside {
-    font-size: 0.9em;
-   /* line-height:15px; */
-}
-
-th {
-    text-align: left;
-    font-weight: bold;
-}
-
-
 body {
     width: 90%;
     margin: 0em auto;
-}
-
-header nav {
-    float: left;
-    margin-top: -38px;
-    padding-left: 168px;
-}
-
-header nav ul {
-    margin-bottom: 0;
-}
-
-header nav li {
-    float: left;
-    width: 120px;
-    margin-left: 0;
-}
-
-header nav a {
-    display: inline-block;
-    width: 100%;
-    padding: 20px 0;
-}
-
-
-.pub-list li time {
-    display: block;
-    float: left;
-    width: 144px;
-    padding-right: 24px;
-    margin-top: 3px;
-}
-
-.pub-list li {
-    clear: both;
-}
-
-.pub-list .where {
-    color: #999;
-    font-size: 90%;
 }
 
 article  {
@@ -257,47 +169,6 @@ article  h1 {
     border-bottom: 1px solid #EBEBEB;
 }
 
-article time + p {
-    margin-top: 0em;
-}
-
-article  time {
-    float: left;
-    margin-left: -168px;
-    margin-top: -2.5em;
-}
-
-article nav {
-    width: 648px;
-    margin: 2em 0 0 -168px;
-    overflow: auto;
-}
-
-article nav .previous {
-    float: left;
-}
-
-article nav .next {
-    float: right;
-}
-
-aside p,
-aside li {
-    float: left;
-}
-
-aside ul {
-    list-style-type: none;
-}
-
-aside li {
-    margin-bottom: 1em;
-    line-height: 20px;
-}
-
-aside {
-    overflow: hidden;
-}
 
 footer {
     text-align: center;
