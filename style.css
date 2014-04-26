@@ -1,10 +1,3 @@
-pre{
-   overflow: hidden;
-}
-pre:hover{
-   overflow: visible;
-}
-
 /**
  * Reset - http://goo.gl/2Fft4
  ********************************************************************/
@@ -32,13 +25,6 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure, footer,
 header, hgroup, menu, nav, section {
     display: block;
-}
-body {
-    line-height: 1;
-    transition: all linear 800ms;
-    -o-transition: all linear 800ms;
-    -moz-transition: all linear 800ms;
-    -webkit-transition: all linear 800ms;
 }
 ol, ul {
     list-style: none;
@@ -97,7 +83,7 @@ body > header h1 a{
     color: rgb(88, 130, 250);
     margin-bottom: 0px;
     float: left;
-    letter-spacing: -1px;
+    letter-spacing: -2px;
     font-family: ‘Arial Black’,Gadget,sans-serif;
     letter-spacing: -1px;
     line-height: 1;
@@ -130,12 +116,9 @@ h1, h2 {
 a {
     text-decoration: none;
        color: rgb(88, 130, 250);
-   /*
-    color: #06C; */
 }
 
 a:hover {
- /* color: #F30; */
  color: #06C;  
  text-shadow: 1px 1px 3px #D5D5D5;
 
@@ -171,7 +154,6 @@ time {
 }
 
 header nav {
-    /*text-transform: uppercase;*/
     font-size: 1.2em;
     line-height: 1;
 }
@@ -181,7 +163,6 @@ nav ul {
 }
 
 article h1 a {
-    font-family: "Open Sans";
     color: green; 
     font-size:0.3em;
     
@@ -320,12 +301,6 @@ aside {
     overflow: hidden;
 }
 
-/*
-aside h1, aside h2{
-  font-family: 'Droid Sans', serif;
-  margin-bottom: 0em;
-}
-*/
 footer {
     text-align: center;
     border-top: 1px solid hsla(210, 10%, 50%, 0.2);
@@ -340,10 +315,14 @@ pre {
     margin: 1.7143em 0;
     font-size: 0.875em;
     background: #FCFCFC;
+    overflow: hidden;
 }
 
 pre, code {
     font-family: consolas,monospace,x;
     font-size: 1em;
+}
+pre:hover{
+   overflow: visible;
 }
 
