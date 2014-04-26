@@ -58,7 +58,6 @@ html {
 }
 
 body {
-    /* font-family: 'Droid Serif', sans-serif;*/
     font-family:Georgia,serif;
     font-size: 100%;
     background-color: #fff;
@@ -74,7 +73,6 @@ body > header {
     overflow: hidden;
     display:block;
     border-bottom: 1px solid #EBEBEB;
-    padding: 10px 12px 9px 10px;
     margin-bottom: 1em;
     margin-top:2em;
 
