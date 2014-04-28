@@ -103,7 +103,7 @@ h1 {
     font-weight:bold;
 }
 h1:hover {
-    letter-spacing: -2px;
+    letter-spacing: 0px;
 }
 
 h2 {
