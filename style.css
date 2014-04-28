@@ -102,6 +102,9 @@ h1 {
     font-family: Verdana,Arial,Helvetica,sans-serif;
     font-weight:bold;
 }
+h1:hover {
+    letter-spacing: -2px;
+}
 
 h2 {
     font-size: 1.8em;
