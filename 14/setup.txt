@@ -11,7 +11,7 @@ VPS have installed LAMP on Ubuntu.
 
 ### Local
 
-Installed Ubuntu.
+Installed Ubuntu ([ElementaryOS](http://elementaryos.org/))
 
 Enabled login with keys:-
 

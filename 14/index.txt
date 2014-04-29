@@ -1,10 +1,10 @@
 # Blog
 
+- [My development setup](setup.html)
 - [How to Update Github hosted static website](update_gihub_hosted_website.html)
 - [Host your website on Github for FREE](free_hosting_on_github.html)
 - [What to write?](what_to_write.html)
 - [What do you need to make a web app?](web_app_needs.html)
 - [About this blog](about_this_blog.html)
 - [Send files from Dropbox to Kindle](dropbox_to_kindle.html)
-- [My development setup](setup.html)
 - [Super fast remote editing with Vim](vim_fast_remote.html)
