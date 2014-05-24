@@ -1,0 +1,10 @@
+When to use kill -9
+===================
+Why you should use *kill -15* before *kill -9*
+----------------------------------------------
+
+Every time when I have to hardkill a process I use *kill -9 PID*. But from [unix.stackexchange.com](http://unix.stackexchange.com/a/8918) 
+
+> Generally, you should use *kill* -15 before *kill -9* to give the target process a chance to clean up after itself. If you don't give the process a chance to finish what it's doing and clean up, it may leave corrupted files (or other state) around that it won't be able to understand once restarted.)
+
+
