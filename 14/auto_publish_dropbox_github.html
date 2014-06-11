@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+  <title>Auto Publish To Github Pages From Dropbox • Motyar</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="author" href="https://plus.google.com/116599978027440206136?rel=author">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <!--
+<header>
+    <h1><a href="/">Motyar</a></h1>
+</header>
+    -->
+<div id="main">
+<article class="post">
+<h1>Auto Publish To Github Pages From Dropbox</h1>
+
+<h2>Dropbox integrated FREE static web hosting that supports custom domain.</h2>
+
+<p>I am sure you know <a href="http://motyar.github.io/14/free_hosting_on_github.html">Any static site can be hosted on Github pages for FREE</a>, and <a href="http://motyar.github.io/14/update_gihub_hosted_website.html">How to Update Github hosted static website</a>. </p>
+
+<p>In this post we are talking about how we can automate the process using Dropbox + A simple bash script + A cron job update these sites.</p>
+
+<p>Here are few steps:</p>
+
+<ul>
+<li><p>Login to Dropbox and setup sync to your machine. You can <a href="https://db.tt/DFVls9JO">register to Dropbox here</a> [Get 2GB FREE storage).</p></li>
+<li><p><a href="http://motyar.github.io/14/free_hosting_on_github.html">Setup a static site on Github pages for FREE</a>. Skip if you already have one.</p></li>
+<li><p>cd to your Dropbox folder, and clone the repo.</p>
+
+<pre><code>git clone git://github.com/usename/site.com.git
+</code></pre></li>
+<li><p>cd into that dir</p>
+
+<pre><code>cd site.com
+</code></pre></li>
+<li><p>Create a new file (named 'update')  and put this code into that.</p>
+
+<pre><code>git add -A .
+git commit -m "Updated"
+git push origin gh-pages --force
+</code></pre></li>
+<li><p>chmod +x update</p></li>
+<li><p>Make few changes and test if its working well, by running this command:</p>
+
+<pre><code>./update
+</code></pre></li>
+<li><p>Setup cron job. run</p>
+
+<pre><code>crontab -e
+</code></pre></li>
+<li><p>Add this line</p>
+
+<ul>
+<li><ul>
+<li><ul>
+<li><ul>
+<li><ul>
+<li>cd /path/to/Dropbox/Dir/site.com &amp;&amp; ./update </li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>All set, Now your site.com folder is in syn with Dropbox, The cron is looking for changes and pushing to Github pages.</p></li>
+</ul>
+
+<p>Let me know what you think, I am @motyar on Twitter.</p>
+</article>
+</div>
+<footer>
+<p><a href="/">Home</a> | <a href="/14">Blog</a> | <a href="http://github.com/motyar">Code</a> | <a href="/cv">Résumé</a> | Follow me on twitter <a href="http://twitter.com/motyar" target="_blank">@motyar</a></p>
+<small class="Footer-legal">This entire site is uncopyrighted.</small>
+</footer> 
+<!--
+<script src="/app.js"></script>
+-->
+</body>
+</html>
+<link rel="stylesheet" href="/style.css" type="text/css" media="screen" />
