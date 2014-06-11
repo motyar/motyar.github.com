@@ -9,7 +9,7 @@ In this post we are talking about how we can automate the process using Dropbox 
 
 Here are few simple steps:
 
-* Login to *Dropbox* and setup sync to your machine. You can [register to Dropbox here](https://db.tt/DFVls9JO) (Get 2GB *FREE* storage).
+* Login to **Dropbox** and setup sync to your machine. You can [register to Dropbox here](https://db.tt/DFVls9JO) (Get 2GB **FREE** storage).
 
 * [Setup a static site on *Github pages* for FREE](http://motyar.github.io/14/free_hosting_on_github.html). Skip if you already have one.
 
@@ -36,7 +36,7 @@ Here are few simple steps:
 
         ./update
 
-* Setup *cron job*. run
+* Setup **cron job**. run
 
         crontab -e
 
@@ -44,7 +44,7 @@ Here are few simple steps:
         
         * * * * *  cd /path/to/Dropbox/Dir/site.com && ./update 
 
-* All set, Now your site.com folder is in syn with *Dropbox*, The *cron* is looking for changes and pushing to *Github pages*.
+* All set, Now your site.com folder is in syn with **Dropbox**, The **cron** is looking for changes and pushing to **Github pages**.
 
 Let me know what you think, I am [@motyar](http://twitter.com/motyar) on Twitter.
 
