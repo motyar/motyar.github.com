@@ -18,18 +18,19 @@
 
 <h2>Dropbox integrated FREE static web hosting that supports custom domain.</h2>
 
-<p>I am sure you know <a href="http://motyar.github.io/14/free_hosting_on_github.html">Any static site can be hosted on Github pages for FREE</a>, and <a href="http://motyar.github.io/14/update_gihub_hosted_website.html">How to Update Github hosted static website</a>. </p>
+<p>I am sure you know <a href="http://motyar.github.io/14/free_hosting_on_github.html">How static site can be hosted on Github pages for FREE</a>, and <a href="http://motyar.github.io/14/update_gihub_hosted_website.html">How to Update Github hosted websites</a>. </p>
 
-<p>In this post we are talking about how we can automate the process using Dropbox + A simple bash script + A cron job update these sites.</p>
+<p>In this post we are talking about how we can automate the process using Dropbox + A simple bash script + A cron job to Automate the process of updating these sites.</p>
 
-<p>Here are few steps:</p>
+<p>Here are few simple steps:</p>
 
 <ul>
-<li><p>Login to Dropbox and setup sync to your machine. You can <a href="https://db.tt/DFVls9JO">register to Dropbox here</a> [Get 2GB FREE storage).</p></li>
+<li><p>Login to Dropbox and setup sync to your machine. You can <a href="https://db.tt/DFVls9JO">register to Dropbox here</a> (Get 2GB FREE storage).</p></li>
 <li><p><a href="http://motyar.github.io/14/free_hosting_on_github.html">Setup a static site on Github pages for FREE</a>. Skip if you already have one.</p></li>
 <li><p>cd to your Dropbox folder, and clone the repo.</p>
 
-<pre><code>git clone git://github.com/usename/site.com.git
+<pre><code>cd ~/Dropbox/  
+git clone git://github.com/usename/site.com.git
 </code></pre></li>
 <li><p>cd into that dir</p>
 
@@ -41,7 +42,10 @@
 git commit -m "Updated"
 git push origin gh-pages --force
 </code></pre></li>
-<li><p>chmod +x update</p></li>
+<li><p>Give it the power.</p>
+
+<pre><code>chmod +x update
+</code></pre></li>
 <li><p>Make few changes and test if its working well, by running this command:</p>
 
 <pre><code>./update
@@ -52,17 +56,8 @@ git push origin gh-pages --force
 </code></pre></li>
 <li><p>Add this line</p>
 
-<ul>
-<li><ul>
-<li><ul>
-<li><ul>
-<li><ul>
-<li>cd /path/to/Dropbox/Dir/site.com &amp;&amp; ./update </li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul></li>
+<pre><code>* * * * *  cd /path/to/Dropbox/Dir/site.com &amp;&amp; ./update
+</code></pre></li>
 <li><p>All set, Now your site.com folder is in syn with Dropbox, The cron is looking for changes and pushing to Github pages.</p></li>
 </ul>
 
