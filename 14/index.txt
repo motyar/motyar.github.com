@@ -1,11 +1,11 @@
 # Blog
 
+- [Host your website on Github for FREE](free_hosting_on_github.html)
 - [Things I have started working on](things_i_have_started.html)
 - [Auto Publish To Github Pages From Dropbox](auto_publish_dropbox_github.html)
 - [When to use kill -9](kill_15_before_kill_9.html)
 - [My development setup](setup.html)
 - [How to Update Github hosted static website](update_gihub_hosted_website.html)
-- [Host your website on Github for FREE](free_hosting_on_github.html)
 - [What to write?](what_to_write.html)
 - [What do you need to make a web app?](web_app_needs.html)
 - [About this blog](about_this_blog.html)
