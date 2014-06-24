@@ -1,0 +1,8 @@
+Things I have started working on
+================================
+List of things I have starting working but not sure when I will be able to finish. Listing them here to keep track and log.
+
+* (lobi.mobi)[http://lobi.mobi] : Simple domain name hack. No idea for its future.
+* (sgnr.in)[http://sgnr.in] : A website of my local city. 
+* (fxos.in)[http://fxos.in] : FireFox OS India. 
+
