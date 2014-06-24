@@ -4,8 +4,8 @@ List of things I have starting working but not sure when I will be able to finis
 
 * FireFox OS app development. Here are my two apps on marketplace
 
-        * [AgeInDays](https://marketplace.firefox.com/app/ageindays/)
-        * [Numerology Guide](https://marketplace.firefox.com/app/numerology-guide)
+    * [AgeInDays](https://marketplace.firefox.com/app/ageindays/)
+    * [Numerology Guide](https://marketplace.firefox.com/app/numerology-guide)
 
 * [lobi.mobi](http://lobi.mobi) : Simple domain name hack. No idea for its future.
 * [sgnr.in](http://sgnr.in) : A website of my local city. 
