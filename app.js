@@ -5,7 +5,7 @@
         //window.location.href = 'http://github.com';
         //TODO if file is index.html and filename doest exits
 
-        var editUrl = url.replace("//","//github.com/motyar/motyar.github.com/").replace("motyar.github.io/","edit/master/").replace("?edit="+edit,"").replace(".html",".txt");
+        var editUrl = url.replace("//","//github.com/motyar/motyar.github.com/").replace("motyar.github.io/","edit/master/").replace("?edit="+edit,"").replace(".html",".txt#fullscreen_blob_contents");
         //alert(editUrl);
         window.location.href = editUrl; 
     }
