@@ -49,6 +49,7 @@ demoApp.config(function($routeProvider){
 });
     demoApp.controller('customer',function ($scope,simpleFactory){
         $scope.names=simpleFactory.getCustomers();
+        alert($scope.names[0].name);
 
         $scope.addCustomer = function(){
             $scope.names.push({
