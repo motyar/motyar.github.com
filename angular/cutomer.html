@@ -1,0 +1,14 @@
+
+  <input type="search" ng-model="q" placeholder="filter friends..." />
+  <select nxg-model="o">
+    <option value="">Order By</option>
+    <option value="name">Name</option>
+    <option value="city">City</option>
+  </select>
+  
+  Here are {{names.length}} names
+  <ol>
+    <li ng-repeat="name in names | filter:q ">
+      {{$index}} {{name.name}}, {{name.city | uppercase }}
+    </li>
+  </ol>
