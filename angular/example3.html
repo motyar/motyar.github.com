@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+  <meta charset="utf-8">
+  <title>Simplest example 1</title>
+</head>
+<body ng-app="demoApp">  
+<div ng-view></div>
+<!--
+  <div ng-controller="customer">
+  </div>
+  -->
+<script>
+
+var demoApp = angular.module('demoApp',['ngRoute']);
+
+demoApp.factory('simpleFactory',function(){
+    var factory = {};
+    var customers =  [{name:'Motyar',city:'rsnr'},
+                    {name:'Dharm',city:'sgnr'},
+                    {name:'Rahul',city:'delhi'}];
+    factory.getCustomers = function(){
+        return customers;
+    }
+});
+
+
+
+demoApp.config(function($routeProvider){
+    $routeProvider
+        .when('/',
+        {
+            controller:'customer',
+            templateUrl:'customer.html'
+
+        })
+        .when('/new',
+        {
+            controller:'customer',
+            templateUrl:'new.html'
+
+        })
+        .otherwise({
+            redirectTo:'/'   
+        });
+       
+});
+    demoApp.controller('customer',function ($scope,simpleFactory){
+        $scope.names=simpleFactory.getCustomers();
+
+        $scope.addCustomer = function(){
+            $scope.names.push({
+                name:$scope.newCustomer.name,
+                city:$scope.newCustomer.city
+            });
+
+        }
+    }              
+);
+</script>
+<a href="#/">Customers</a> | 
+<a href="#/new">New</a>
+</body>
+</html>
