@@ -21,6 +21,12 @@ demoApp.config(function($routeProvider){
             templateUrl:'customer.html'
 
         })
+        .when('/new',
+        {
+            controller:'customer',
+            templateUrl:'new.html'
+
+        })
         .otherwise({
             redirectTo:'/'   
         });
@@ -37,5 +43,7 @@ demoApp.config(function($routeProvider){
     }              
 );
 </script>
+<a href="#/">Customers</a> | 
+<a href="#/new">New</a>
 </body>
 </html>
