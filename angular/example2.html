@@ -46,7 +46,7 @@ demoApp.config(function($routeProvider){
                     {name:'Rahul',city:'delhi'}];
 
         $scope.addCustomer = function(){
-            alert($scope.newCustomer);
+            alert($scope.newCustomer.name);
             $scope.customer.push({
                 name:$scope.newCustomer.name,
                 city:$scope.newCustomer.city
