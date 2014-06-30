@@ -44,11 +44,14 @@ demoApp.config(function($routeProvider){
                     {name:'Motyar',city:'rsnr'},
                     {name:'Dharm',city:'sgnr'},
                     {name:'Rahul',city:'delhi'}];
+
         $scope.addCustomer = function(){
+            alert($scope.newCustomer);
             $scope.customer.push({
                 name:$scope.newCustomer.name,
                 city:$scope.newCustomer.city
-                });
+            });
+
         }
     }              
 );
