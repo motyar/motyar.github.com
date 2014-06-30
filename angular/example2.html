@@ -6,6 +6,7 @@
   <title>Simplest example 1</title>
 </head>
 <body ng-app="demoApp">  
+<ng-view></ng-view>
 <!--
   <div ng-controller="customer">
   </div>
@@ -30,6 +31,9 @@ demoApp.config(function($routeProvider){
                     {name:'Motyar',city:'rsnr'},
                     {name:'Dharm',city:'sgnr'},
                     {name:'Rahul',city:'delhi'}];
+        $scope.addCustomer = function(){
+            $scope.customer.push(newCustomer);
+        }
     }              
 );
 </script>

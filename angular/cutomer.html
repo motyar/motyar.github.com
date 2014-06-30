@@ -12,3 +12,7 @@
       {{$index}} {{name.name}}, {{name.city | uppercase }}
     </li>
   </ol>
+
+  Customer name: <input type="text" ng-model="newCustomer.name"><br />
+  Customer city: <input type="text" ng-model="newCustomer.city"><br />
+  <input type="button" value="Add" ng-click="addCustomer();">
