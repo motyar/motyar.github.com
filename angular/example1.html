@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+  <meta charset="utf-8">
+  <title>Simplest example 1</title>
+</head>
+<body ng-app="demoApp">  
+  <div ng-controller="customer">
+  <input type="search" ng-model="q" placeholder="filter friends..." />
+  <select nxg-model="o">
+    <option value="">Order By</option>
+    <option value="name">Name</option>
+    <option value="city">City</option>
+  </select>
+  
+  Here are {{names.length}} names
+  <ol>
+    <li ng-repeat="name in names | filter:q ">
+      {{$index}} {{name.name}}, {{name.city | uppercase }}
+    </li>
+  </ol>
+  </div>
+<script>
+var demoApp = angular.module('demoApp',[]);
+    demoApp.controller('customer',function ($scope){
+        $scope.names=[  
+                    {name:'Motyar',city:'rsnr'},
+                    {name:'Dharm',city:'sgnr'},
+                    {name:'Rahul',city:'delhi'}];
+    }              
+);
+</script>
+</body>
+</html>
