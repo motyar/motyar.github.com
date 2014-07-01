@@ -24,7 +24,7 @@ todoApp.factory('todoFactory',function(){
   var todos = ['This one','That one'];
   
   factory.getTodos = function(){
-    return factory.todos;
+    return todos;
   }
   
   /*
@@ -46,7 +46,7 @@ todoApp.controller('todos',function($scope,todoFactory){
   init();
   
   function init(){
-    $scope.todos  =       todoFactory.getTodos();
+    $scope.todos  =  todoFactory.getTodos();
     //$scope.addTodo = todoFactory.addTodo();
     //$scope.delTodo = todoFactory.delTodo(index);
   }
