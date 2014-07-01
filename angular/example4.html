@@ -51,7 +51,7 @@ demoApp.config(function($routeProvider){
         $scope.customers=simpleFactory.getCustomers();
 
         $scope.addCustomer = function(){
-            $scope.customers.push({
+            $scope.name.push({
                 name:$scope.newCustomer.name,
                 city:$scope.newCustomer.city
             });
