@@ -30,11 +30,11 @@ todoApp.factory('todoFactory',function(){
   factory.addTodo = function(todo){
       todos.push(todo);
   }
-
+/*
  factory.delTodo = function(index){
      todos.splice(index,1);
  }
-  
+  */
     return factory;
 });
 
@@ -46,7 +46,7 @@ todoApp.controller('todos',function($scope,todoFactory){
   function init(){
     $scope.todos  =  todoFactory.getTodos();
     $scope.addTodo = todoFactory.addTodo($scope.newTodo);
-    $scope.delTodo = todoFactory.delTodo(index);
+    //$scope.delTodo = todoFactory.delTodo(index);
   }
 });
 </script>
