@@ -8,8 +8,8 @@
   
   Here are {{names.length}} names
   <ol>
-    <li ng-repeat="name in names | filter:q ">
-      {{$index}} {{name.name}}, {{name.city | uppercase }}
+    <li ng-repeat="customer in customers | filter:q ">
+      {{$index}} {{customer.name}}, {{customer.city | uppercase }}
     </li>
   </ol>
 
