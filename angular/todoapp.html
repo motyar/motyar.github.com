@@ -28,11 +28,11 @@ todoApp.factory('todoFactory',function(){
   }
   
   factory.addTodo = function(todo){
-      factory.todos.push(todo);
+      todos.push(todo);
   }
 
  factory.delTodo = function(index){
-     factory.todos.splice(index,1);
+     todos.splice(index,1);
  }
   
     return factory;
