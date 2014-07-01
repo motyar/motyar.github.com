@@ -24,14 +24,6 @@ demoApp.factory('simpleFactory',function(){
     factory.getCustomers = function(){
         return customers;
     }
-    factory.putCustomer = function(newCustomer){
-
-            customers.push({
-                name:newCustomer.name,
-                city:newCustomer.city
-            });
-        
-    }
     return factory;
 });
 
@@ -59,14 +51,12 @@ demoApp.config(function($routeProvider){
     demoApp.controller('customer',function ($scope,simpleFactory){
         $scope.customers = simpleFactory.getCustomers();
 
-$scope.addCustomer = simpleFactory.putCustomer(newCustomer);
-/*
         $scope.addCustomer = function(){
             $scope.name.push({
                 name:$scope.newCustomer.name,
                 city:$scope.newCustomer.city
             });
-*/
+
         }
     }              
 );
