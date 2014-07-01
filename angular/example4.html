@@ -22,6 +22,7 @@ demoApp.factory('simpleFactory',function(){
                     {name:'Dharm',city:'sgnr'},
                     {name:'Rahul',city:'delhi'}];
     factory.getCustomers = function(){
+        alert('called');
         return customers;
     }
 });
@@ -48,11 +49,13 @@ demoApp.config(function($routeProvider){
        
 });
     demoApp.controller('customer',function ($scope,simpleFactory){
-        $scope.customers = [{
+       /*
+       $scope.customers = [{
             name:'Motyar',
             city:'chnd'
         }];
-        //$scope.customers = simpleFactory.getCustomers();
+       */
+        $scope.customers = simpleFactory.getCustomers();
 
 alert($scope.customers);
         $scope.addCustomer = function(){
