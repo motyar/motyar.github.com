@@ -17,13 +17,21 @@
 var demoApp = angular.module('demoApp',['ngRoute']);
 
 demoApp.factory('simpleFactory',function(){
-        alert('called');
     var factory = {};
     var customers =  [{name:'Motyar',city:'rsnr'},
                     {name:'Dharm',city:'sgnr'},
                     {name:'Rahul',city:'delhi'}];
     factory.getCustomers = function(){
         return customers;
+    }
+    factory.putCustomer = function(newCustomer){
+
+            customers.push({
+                name:newCustomer.name,
+                city:newCustomer.city
+            });
+        return true;
+        
     }
     return factory;
 });
@@ -50,15 +58,10 @@ demoApp.config(function($routeProvider){
        
 });
     demoApp.controller('customer',function ($scope,simpleFactory){
-       /*
-       $scope.customers = [{
-            name:'Motyar',
-            city:'chnd'
-        }];
-       */
         $scope.customers = simpleFactory.getCustomers();
 
-alert($scope.customers);
+$scope.addCustomer = simpleFactory.putCustomer(newCustomer);
+
         $scope.addCustomer = function(){
             $scope.name.push({
                 name:$scope.newCustomer.name,
