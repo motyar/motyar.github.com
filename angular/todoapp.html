@@ -47,7 +47,9 @@ todoApp.controller('todos',function($scope,todoFactory){
     $scope.todos  =  todoFactory.getTodos();
    // $scope.addTodo = function($scope.newTodo){ alert($scope.newTodo);}
     }
-    $scope.addTodo = todoFactory.addTodo($scope.newTodo);
+    $scope.addTodo =function($scope.newTodo){
+           todoFactory.addTodo($scope.newTodo);
+    }
     //$scope.delTodo = todoFactory.delTodo(index);
 });
 </script>
