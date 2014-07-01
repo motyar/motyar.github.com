@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+  <meta charset="utf-8">
+  <title>ToDo app in ajgularJS</title>
+</head>
+<body ng-app="wineApp">
+  <div ng-controller="wines">
+    <ol>
+    <li ng-repeat="wine in wines" ng-click="delWine({{$index}});">
+      {{wine.name}}
+      </li>
+    </ol>
+     <input type="text" ng-model="newWine.name">
+     <br />
+     <input type="button" value="Add" ng-click="addWine();">
+  </div>
+<script>
+var todoApp = angular.module('wineApp',[]);
+
+todoApp.factory('wineFactory',function(){
+  var factory = [];
+  //var todos = ['This one','That one'];
+  
+  factory.getWines = function(){
+    return $http.get("http://motyar.info/wine/api/wines");
+  }
+  /*
+  factory.addTodo = function(todo){
+      alert(todo);
+      todos.push(todo);
+  }
+  */
+/*
+ factory.delTodo = function(index){
+     todos.splice(index,1);
+ }
+  */
+    return factory;
+});
+
+todoApp.controller('wines',function($scope,todoFactory){
+  
+  $scope.wines = [];
+  init();
+  
+  function init(){
+    $scope.wines  =  todoFactory.getWines();
+   // $scope.addTodo = function($scope.newTodo){ alert($scope.newTodo);}
+    }
+    /*
+    $scope.addTodo =function($scope.newTodo){
+           //todoFactory.addTodo($scope.newTodo);
+           alert('cccc');
+    };
+    */
+    //$scope.delTodo = todoFactory.delTodo(index);
+});
+</script>
+</body>
+</html>
