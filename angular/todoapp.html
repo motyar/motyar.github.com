@@ -27,7 +27,6 @@ todoApp.factory('todoFactory',function(){
     return todos;
   }
   
-  /*
   factory.addTodo = function(todo){
       factory.todos.push(todo);
   }
@@ -35,7 +34,6 @@ todoApp.factory('todoFactory',function(){
  factory.delTodo = function(index){
      factory.todos.splice(index,1);
  }
-*/
   
     return factory;
 });
@@ -47,8 +45,8 @@ todoApp.controller('todos',function($scope,todoFactory){
   
   function init(){
     $scope.todos  =  todoFactory.getTodos();
-    //$scope.addTodo = todoFactory.addTodo();
-    //$scope.delTodo = todoFactory.delTodo(index);
+    $scope.addTodo = todoFactory.addTodo();
+    $scope.delTodo = todoFactory.delTodo(index);
   }
 });
 </script>
