@@ -17,13 +17,13 @@
 var demoApp = angular.module('demoApp',['ngRoute']);
 
 demoApp.factory('simpleFactory',function(){
+        alert('called');
     var factory = {};
-    var customers_data =  [{name:'Motyar',city:'rsnr'},
+    var customers =  [{name:'Motyar',city:'rsnr'},
                     {name:'Dharm',city:'sgnr'},
                     {name:'Rahul',city:'delhi'}];
     factory.getCustomers = function(){
-        alert('called');
-        return customers_data;
+        return customers;
     }
 });
 
