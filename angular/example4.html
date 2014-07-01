@@ -32,7 +32,7 @@ demoApp.config(function($routeProvider){
     $routeProvider
         .when('/',
         {
-            controller:'names',
+            controller:'customer',
             templateUrl:'customer.html'
 
         })
@@ -47,8 +47,9 @@ demoApp.config(function($routeProvider){
         });
        
 });
-    demoApp.controller('names',function ($scope,simpleFactory){
-        $scope.customers=simpleFactory.getCustomers();
+    demoApp.controller('customer',function ($scope,simpleFactory){
+        alert(simpleFactory.getCustomers());
+        $scope.customers = simpleFactory.getCustomers();
 
 alert($scope.customers);
         $scope.addCustomer = function(){
