@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+  <meta charset="utf-8">
+  <title>ToDo app in ajgularJS</title>
+</head>
+<body ng-app="todoApp">
+  <div ng-controller="todos">
+    <ol>
+    <li ng-repeat="todo in todos" ng-click="delTodo({{$index}});">
+      {{todo}}
+      </li>
+    </ol>
+     <input type="text" ng-model="newTodo">
+     <br />
+     <input type="button" value="Add" ng-click="addTodo();">
+  </div>
+<script>
+var todoApp = angular.module('todoApp',[]);
+
+todoApp.factory('todoFactory',function(){
+  var factory = [];
+  var todos = ['This one','That one'];
+  
+  factory.getTodos = function(){
+    return factory.todos;
+  }
+  
+  factory.addTodo = function(todo){
+      factory.todo.push(todo);
+  }
+
+ factory.delTodo = function(index){
+    
+ }
+
+  
+    return factory;
+});
+
+todoApp.controller('todos',function($scope,todoFactory){
+  
+  $scope.todos = [];
+  init();
+  
+  function init(){
+    $scope.todos  =       todoFactory.getTodos();
+    $scope.addTodo = todoFactory.addTodo();
+    $scope.delTodo = todoFactory.delTodo(index);
+  }
+});
+</script>
+</body>
+</html>
