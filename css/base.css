@@ -90,9 +90,11 @@ div.container p {
 }
 
 div.container a {
-    color: #08C;
+  /*
+   color: #08C;
     border-bottom: 1px dashed #dededc;
     text-decoration: none;
+*/
 }
 
 button.nav {
