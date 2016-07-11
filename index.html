@@ -108,10 +108,7 @@ $(document).on('mousemove', function(e){
 var targetElem = $(e.target);
 
   if(targetElem.children().length==0){
-   zoomToolTip.css({
-       left:  e.pageX+30,
-       top:   e.pageY+30
-    });
+   
     zoomToolTip.empty();
    
    var tagName = targetElem.prop("tagName");
@@ -129,18 +126,19 @@ var targetElem = $(e.target);
   if(zoomText){
    zoomToolTip.html(zoomText);
    }
+   zoomToolTip.css({
+       left:  targetElem.pageX+30,
+       top:   e.pageY - (zoomToolTip.width()/2)
+    });
    }
    
 })
 });
 </script>
 <style>
-    #zoomToolTip{
+#zoomToolTip{
   background:#000;
   color:#fff;
-  position:fixed;
-  transform: scale(2, 2);
-  padding:2px 5px;
   line-height:105%;
   max-width:500px;
   position:absolute;
