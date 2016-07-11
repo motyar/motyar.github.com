@@ -98,5 +98,39 @@
 })();
 //]]>
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+   $(document).ready(function(){
+
+ var zoomToolTip = $("<div id='zoomToolTip'></div>").appendTo("body");
+
+$(document).on('mousemove', function(e){	
+var targetElem = $(e.target);
+
+  if(targetElem.children().length==0){
+   zoomToolTip.css({
+       left:  e.pageX+30,
+       top:   e.pageY+30
+    });
+    zoomToolTip.empty();
+   
+   var tagName = targetElem.prop("tagName");
+   
+   var zoomText = targetElem.text();
+    
+   if(tagName=="IMG"){
+       zoomText = targetElem.attr("alt");
+   }
+   
+   if(zoomText==""){
+      zoomText = targetElem.attr("title");
+   }
+  
+  if(zoomText){
+   zoomToolTip.html(zoomText);
+   }
+}
+    
+</script>
 </body>
 </html>
