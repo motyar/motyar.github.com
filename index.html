@@ -128,8 +128,9 @@ var targetElem = $(e.target);
    }
    zoomToolTip.css({
        left:  targetElem.pageX+30,
-       top:   e.pageY - (zoomToolTip.width()/2)
+       top:   e.pageY - (zoomToolTip.width/2),
     });
+    console.log(zoomToolTip.width+" "+e.pageY - (zoomToolTip.width/2));
    }
    
 })
