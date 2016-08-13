@@ -83,7 +83,7 @@
     </p> 
     <h3>Web Scrape Master</h3>
     <p>
-        <a href="http://webscrapemaster.com" target="_blank">WebScrapeMaster</a>  provides <b>Visual Web Scraper</b> and a very easy to use <b>API</b> for scrape data from web. You can scrape webpages without writting code for it.
+        <a href="http://motyar.info/webscrapemaster" target="_blank">WebScrapeMaster</a>  provides <b>Visual Web Scraper</b> and a very easy to use <b>API</b> for scrape data from web. You can scrape webpages without writting code for it.
     </p> 
     <p></p>
     <p></p>
@@ -98,63 +98,5 @@
 })();
 //]]>
 </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-
- var zoomToolTip = $("<div id='zoomToolTip'></div>").appendTo("body");
-
-$(document).on('mousemove', function(e){	
-var targetElem = $(e.target);
-
-  if(targetElem.children().length==0){
-   
-    zoomToolTip.empty();
-   
-   var tagName = targetElem.prop("tagName");
-   
-   var zoomText = targetElem.text();
-    
-   if(tagName=="IMG"){
-       zoomText = targetElem.attr("alt");
-   }
-   
-   if(zoomText==""){
-      zoomText = targetElem.attr("title");
-   }
-  
-  if(zoomText){
-   zoomToolTip.html(zoomText);
-   }
-   zoomToolTip.css({
-       left:  targetElem.pageX+30,
-       top:   e.pageY - (zoomToolTip.width()/2),
-    });
-    console.log(zoomToolTip.width()+" "+e.pageY - (zoomToolTip.width()/2));
-   }
-   
-})
-});
-</script>
-<style>
-#zoomToolTip{
-  background:#000;
-  color:#fff;
-  line-height:105%;
-  max-width:500px;
-  position:absolute;
-  font-family:arial;
-  z-index:9999999999;
-  -webkit-border-radius: 2px;
- -moz-border-radius: 2px;
-  border-radius:2px;
-  -webkit-transition:all 50ms ease-in-out;
-  -moz-transition: all 50ms ease-in-out;
-  -ms-transition: all 50ms ease-in-out;
- -o-transition: all 50ms ease-in-out;
-  transition:all 50ms ease-in-out;
-  
-}
-</style>
 </body>
 </html>
