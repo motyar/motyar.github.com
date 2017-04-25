@@ -1,0 +1,39 @@
+<script type="text/javascript"> 
+$(document).ready(function() {
+  var x1,x2,y1,y2;
+  $(document).mousedown(function(e) {
+    $(&quot;
+  #current&quot;
+  ).attr({ id: ''
+   })
+    box = $('&lt;
+  div style=&quot;
+  border:1px #FF00FF solid;
+  position:fixed;
+  &quot;
+  &gt;
+  ').hide();
+    $(document.body).append(box);
+    x1 = e.pageX;
+    y1 = e.pageY;
+    box.attr({id: 'current'}).css({
+             top: e.pageY , //offsets
+             left: e.pageX //offsets
+   }).fadeIn();
+  });
+  $(document).mousemove(function(e) {
+    $(&quot;
+  #current&quot;
+  ).css({
+      width:Math.abs(e.pageX - x1), //offsets
+      height:Math.abs(e.pageY - y1) //offsets
+   }).fadeIn();
+  });
+  $(document).mouseup(function() {
+    $(&quot;
+  #current&quot;
+  ).attr({ id: ''
+   })
+  });
+ 
+ </script>
